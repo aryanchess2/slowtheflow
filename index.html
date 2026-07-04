@@ -437,59 +437,49 @@ footer{background:#0A2520;border-top:1px solid rgba(26,140,125,.2);padding:2rem 
     <div style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.75rem">// NASA Earth Observatory · Aral Sea · 1960 → 2014</div>
     <h2 style="font-family:var(--serif);font-size:clamp(28px,4vw,48px);color:white;font-weight:400;line-height:1.15;margin-bottom:.5rem">A lake the size of Ireland.<br><em style="color:#5DD6C0">Gone in 50 years.</em></h2>
     <p style="font-size:14px;color:rgba(255,255,255,.5);margin-bottom:2rem;font-weight:300">Because of the cotton in your jeans.</p>
-    <!-- BEFORE / AFTER — Real NASA Aral Sea Images -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;max-width:820px;margin:0 auto;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.1)">
+    <!-- BEFORE / AFTER — Uploaded directly to GitHub repo -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;max-width:860px;margin:0 auto;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.2)">
 
-      <!-- 1989 — LAKE FULL -->
-      <div style="position:relative;background:#0d2a40">
-        <div style="height:240px;position:relative;overflow:hidden;background:linear-gradient(135deg,#0e4a7a,#1a7aaa)">
-          <img
-            src="https://earthobservatory.nasa.gov/ContentWOC/images/aral/aral_tm_1989.jpg"
-            alt="Aral Sea 1989 — NASA Landsat satellite image showing the lake full and blue"
-            style="width:100%;height:240px;object-fit:cover;display:block;transition:opacity .3s"
-            onerror="this.style.display='none';document.getElementById('aral-1989-fallback').style.display='flex'">
-          <div id="aral-1989-fallback" style="display:none;width:100%;height:240px;position:absolute;inset:0;background:linear-gradient(160deg,#0e4a7a 0%,#1a8c7d 100%);flex-direction:column;align-items:center;justify-content:center;gap:12px">
-            <svg viewBox="0 0 120 80" style="width:120px" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="60" cy="45" rx="50" ry="30" fill="#1E90C0" opacity=".9"/>
-              <ellipse cx="60" cy="43" rx="40" ry="22" fill="#38AFDF" opacity=".7"/>
-              <path d="M20,50 C30,42 50,38 60,40 C70,42 90,38 100,45" stroke="rgba(255,255,255,.3)" stroke-width="2" fill="none"/>
-              <path d="M30,58 C45,52 65,50 80,55" stroke="rgba(255,255,255,.2)" stroke-width="1.5" fill="none"/>
-            </svg>
-            <span style="font-family:monospace;font-size:12px;color:rgba(255,255,255,.7)">1989 · Aral Sea Full</span>
-            <span style="font-family:monospace;font-size:10px;color:rgba(255,255,255,.4)">68,000 km²</span>
-          </div>
+      <!-- 2000 — LAKE PRESENT -->
+      <div style="position:relative">
+        <img
+          src="aralsea_tmo_2000238__1_.jpg"
+          alt="Aral Sea 2000 — NASA MODIS true colour satellite image. Yellow outline shows 1960 shoreline. Lake is severely reduced but still present."
+          style="width:100%;height:300px;object-fit:cover;object-position:center;display:block">
+        <div style="position:absolute;top:10px;left:10px;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);padding:5px 14px;border-radius:20px;font-family:monospace;font-size:12px;color:#5DD6C0;font-weight:600;border:1px solid rgba(93,214,192,.3)">
+          2000 · Still here
         </div>
-        <div style="background:rgba(0,0,0,.6);padding:.65rem 1rem;font-family:monospace;font-size:12px;color:white;display:flex;justify-content:space-between">
-          <span>🌊 1989 · Landsat · NASA</span><span style="color:#5DD6C0;font-weight:600">68,000 km²</span>
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:1rem">
+          <div style="font-family:monospace;font-size:13px;color:white;font-weight:600">Severely reduced</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.55);margin-top:3px">Yellow line = 1960 shoreline. The gap between line and water = what cotton consumed.</div>
         </div>
       </div>
 
-      <!-- 2014 — LAKE GONE -->
-      <div style="position:relative;background:#1a0f05">
-        <div style="height:240px;position:relative;overflow:hidden;background:linear-gradient(135deg,#5a3010,#8B6020)">
-          <img
-            src="https://earthobservatory.nasa.gov/ContentWOC/images/aral/aral_oli_2014.jpg"
-            alt="Aral Sea 2014 — NASA OLI satellite image showing the lake almost completely dried up"
-            style="width:100%;height:240px;object-fit:cover;display:block;transition:opacity .3s"
-            onerror="this.style.display='none';document.getElementById('aral-2014-fallback').style.display='flex'">
-          <div id="aral-2014-fallback" style="display:none;width:100%;height:240px;position:absolute;inset:0;background:linear-gradient(160deg,#5a3010 0%,#8B6020 100%);flex-direction:column;align-items:center;justify-content:center;gap:12px">
-            <svg viewBox="0 0 120 80" style="width:120px" xmlns="http://www.w3.org/2000/svg">
-              <rect width="120" height="80" fill="#8B6014"/>
-              <path d="M10,25 L25,18 L35,28 L50,20 L65,30 L80,22 L95,32 L110,24" stroke="rgba(255,255,255,.12)" stroke-width="1" fill="none"/>
-              <path d="M15,42 L30,36 L45,44 L60,38 L75,46 L90,40 L105,48" stroke="rgba(255,255,255,.08)" stroke-width="1" fill="none"/>
-              <ellipse cx="88" cy="58" rx="14" ry="7" fill="#1a5070" opacity=".5"/>
-            </svg>
-            <span style="font-family:monospace;font-size:12px;color:rgba(255,255,255,.7)">2014 · Aral Sea Gone</span>
-            <span style="font-family:monospace;font-size:10px;color:#f87171">&lt;5% remains</span>
-          </div>
+      <!-- 2018 — LAKE GONE -->
+      <div style="position:relative">
+        <img
+          src="aralsea_tmo_2018233__1_.jpg"
+          alt="Aral Sea 2018 — NASA MODIS true colour satellite image. Yellow outline shows 1960 shoreline. Inside the outline is now mostly desert."
+          style="width:100%;height:300px;object-fit:cover;object-position:center;display:block">
+        <div style="position:absolute;top:10px;left:10px;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);padding:5px 14px;border-radius:20px;font-family:monospace;font-size:12px;color:#f87171;font-weight:600;border:1px solid rgba(248,81,73,.3)">
+          2018 · Nearly gone
         </div>
-        <div style="background:rgba(0,0,0,.6);padding:.65rem 1rem;font-family:monospace;font-size:12px;color:white;display:flex;justify-content:space-between">
-          <span>🏜️ 2014 · OLI · NASA</span><span style="color:#f87171;font-weight:600">&lt;5% remains</span>
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:1rem">
+          <div style="font-family:monospace;font-size:13px;color:white;font-weight:600">&lt;5% of original size</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.55);margin-top:3px">Everything inside that yellow outline was water 60 years ago.</div>
         </div>
       </div>
     </div>
-    <div style="font-size:11px;color:rgba(255,255,255,.25);margin-top:.75rem;font-family:var(--mono)">
-      Images: NASA Earth Observatory · earthobservatory.nasa.gov/world-of-change/AralSea · Public Domain
+
+    <!-- NASA link + credit -->
+    <div style="max-width:860px;margin:.75rem auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:0 4px">
+      <div style="font-size:11px;color:rgba(255,255,255,.3);font-family:monospace">
+        📡 NASA Earth Observatory · MODIS · True Colour · Public Domain
+      </div>
+      <a href="https://science.nasa.gov/earth/earth-observatory/world-of-change/aral-sea/" target="_blank"
+        style="font-size:11px;color:#5DD6C0;font-family:monospace;text-decoration:none;border:1px solid rgba(93,214,192,.25);padding:4px 14px;border-radius:20px;background:rgba(93,214,192,.08);">
+        View full 1977–2024 timeline at NASA →
+      </a>
     </div>
     <!-- STAT STRIP -->
     <div style="display:flex;gap:0;margin-top:2rem;max-width:800px;margin-left:auto;margin-right:auto;border:1px solid rgba(255,255,255,.1);border-radius:8px;overflow:hidden;flex-wrap:wrap">
@@ -709,9 +699,9 @@ footer{background:#0A2520;border-top:1px solid rgba(26,140,125,.2);padding:2rem 
         <div class="vw-product-unit">per piece</div>
       </div>
       <div class="vw-product">
-        <div class="vw-product-emoji">🥩</div>
-        <div class="vw-product-name">Beef (1kg)</div>
-        <div class="vw-product-num">15,400L</div>
+        <div class="vw-product-emoji">🍗</div>
+        <div class="vw-product-name">Chicken (1kg)</div>
+        <div class="vw-product-num">4,300L</div>
         <div class="vw-product-unit">per kg</div>
       </div>
       <div class="vw-product">
@@ -818,9 +808,9 @@ footer{background:#0A2520;border-top:1px solid rgba(26,140,125,.2);padding:2rem 
         <div class="calc-hint">// tea counts too — roughly similar</div>
       </div>
       <div class="calc-question">
-        <div class="calc-q-label">How many times do you eat beef or mutton per week?</div>
+        <div class="calc-q-label">How many times do you eat mutton or chicken per week?</div>
         <input type="number" class="calc-number-input" id="inp-meat" placeholder="Enter number" min="0" max="21">
-        <div class="calc-hint">// servings per week</div>
+        <div class="calc-hint">// mutton or chicken servings per week</div>
       </div>
       <div style="display:flex;gap:10px">
         <button class="btn btn-ghost" onclick="goQ2()" style="flex:1;justify-content:center">← Back</button>
@@ -841,7 +831,7 @@ footer{background:#0A2520;border-top:1px solid rgba(26,140,125,.2);padding:2rem 
         <div class="calc-hint">// typical person uses 3-5L per day</div>
       </div>
       <div style="display:flex;gap:10px">
-        <button class="btn btn-ghost" onclick="goQ3()" style="flex:1;justify-content:center">← Back</button>
+        <button class="btn btn-ghost" onclick="hideAllQ();document.getElementById('calc-q3').style.display='block';updateDots(3)" style="flex:1;justify-content:center">← Back</button>
         <button class="btn btn-primary" onclick="calculateResults()" style="flex:2;justify-content:center">Calculate My Footprint →</button>
       </div>
     </div>
@@ -1089,10 +1079,10 @@ footer{background:#0A2520;border-top:1px solid rgba(26,140,125,.2);padding:2rem 
           <div style="color:var(--text3);font-size:12px">Levi Strauss Life Cycle Assessment (2015)</div>
         </div>
         <div style="display:grid;grid-template-columns:2fr 1.5fr 1fr 2fr;padding:.75rem 1rem;border-top:1px solid var(--border);align-items:center">
-          <div style="color:var(--text)">🥩 Beef</div>
+          <div style="color:var(--text)">🍗 Mutton / Chicken</div>
           <div style="font-family:var(--mono);color:var(--water3)">15,400L</div>
           <div style="color:var(--text3);font-size:12px">per kg</div>
-          <div style="color:var(--text3);font-size:12px">Mekonnen &amp; Hoekstra (2012) — Water Footprint of Farm Animals</div>
+          <div style="color:var(--text3);font-size:12px">Mekonnen &amp; Hoekstra (2012) — Water Footprint of Farm Animals (chicken: 4,300L/kg; mutton: 10,400L/kg)</div>
         </div>
         <div style="display:grid;grid-template-columns:2fr 1.5fr 1fr 2fr;padding:.75rem 1rem;border-top:1px solid var(--border);align-items:center">
           <div style="color:var(--text)">☕ Coffee (1 cup)</div>
@@ -1203,7 +1193,7 @@ footer{background:#0A2520;border-top:1px solid rgba(26,140,125,.2);padding:2rem 
       </div>
       <p style="font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:.85rem">The Aral Sea data is documented by NASA Earth Observatory, UNEP (United Nations Environment Programme), and the UN Secretary-General's 2011 address. The Soviet Irrigation Programme beginning in the 1960s diverted the Amu Darya and Syr Darya rivers to irrigate cotton fields in Uzbekistan and Turkmenistan, resulting in the near-total disappearance of the lake within 50 years.</p>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <a href="https://earthobservatory.nasa.gov/world-of-change/AralSea" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--water2);background:rgba(26,140,125,.08);padding:4px 12px;border-radius:20px;border:1px solid rgba(26,140,125,.2)">NASA Earth Observatory ↗</a>
+        <a href="https://science.nasa.gov/earth/earth-observatory/world-of-change/aral-sea/" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--water2);background:rgba(26,140,125,.08);padding:4px 12px;border-radius:20px;border:1px solid rgba(26,140,125,.2)">NASA Earth Observatory ↗</a>
         <a href="https://www.unep.org/resources/report/dying-and-dead-seas" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--water2);background:rgba(26,140,125,.08);padding:4px 12px;border-radius:20px;border:1px solid rgba(26,140,125,.2)">UNEP — Dying &amp; Dead Seas ↗</a>
       </div>
     </div>
@@ -1261,7 +1251,7 @@ footer{background:#0A2520;border-top:1px solid rgba(26,140,125,.2);padding:2rem 
         <span style="color:var(--water3)">[6]</span> Levi Strauss &amp; Co. (2015). <em style="color:var(--text)">The Life Cycle of a Jean: Understanding the Environmental Impact of a Pair of Levi's® 501® Jeans.</em>
       </div>
       <div style="margin-bottom:.75rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)">
-        <span style="color:var(--water3)">[7]</span> NASA Earth Observatory. <em style="color:var(--text)">World of Change: Aral Sea.</em> earthobservatory.nasa.gov/world-of-change/AralSea
+        <span style="color:var(--water3)">[7]</span> NASA Earth Observatory. <em style="color:var(--text)">World of Change: Aral Sea (1977–2024).</em> <a href="https://science.nasa.gov/earth/earth-observatory/world-of-change/aral-sea/" target="_blank" style="color:var(--water2)">science.nasa.gov/earth/earth-observatory/world-of-change/aral-sea/</a>
       </div>
       <div style="margin-bottom:.75rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)">
         <span style="color:var(--water3)">[8]</span> UNICEF. <em style="color:var(--text)">Water Scarcity.</em> unicef.org/wash/water-scarcity
@@ -1342,31 +1332,35 @@ function updateDots(step) {
   }
 }
 
+function hideAllQ() {
+  ['calc-q1','calc-q2','calc-q3','calc-q4'].forEach(id => {
+    document.getElementById(id).style.display = 'none';
+  });
+}
 function goQ1() {
+  hideAllQ();
   document.getElementById('calc-q1').style.display='block';
-  document.getElementById('calc-q2').style.display='none';
   updateDots(1);
 }
 function goQ2() {
   if (!bathType) { alert('Please select how you bathe.'); return; }
-  const cotton = parseInt(document.getElementById('inp-cotton').value) || 0;
   calcData.bathType = bathType;
-  calcData.cotton = cotton;
-  document.getElementById('calc-q1').style.display='none';
+  calcData.cotton = parseInt(document.getElementById('inp-cotton').value) || 0;
+  hideAllQ();
   document.getElementById('calc-q2').style.display='block';
   updateDots(2);
 }
 function goQ3() {
   calcData.denim = parseInt(document.getElementById('inp-denim').value) || 0;
   calcData.choco = parseInt(document.getElementById('inp-choco').value) || 0;
-  document.getElementById('calc-q2').style.display='none';
+  hideAllQ();
   document.getElementById('calc-q3').style.display='block';
   updateDots(3);
 }
 function goQ4() {
   calcData.coffee = parseInt(document.getElementById('inp-coffee').value) || 0;
   calcData.meat = parseInt(document.getElementById('inp-meat').value) || 0;
-  document.getElementById('calc-q3').style.display='none';
+  hideAllQ();
   document.getElementById('calc-q4').style.display='block';
   updateDots(4);
 }
@@ -1381,7 +1375,7 @@ function calculateResults() {
   const denimWater = calcData.denim * 7200;
   const chocoWater = calcData.choco * 240; // avg 100g bar = 240L
   const coffeeWater = calcData.coffee * 52 * 140; // 140L per cup
-  const meatWater = calcData.meat * 52 * 500; // ~500L per serving
+  const meatWater = calcData.meat * 52 * 350; // ~350L per serving (avg mutton/chicken)
   const riceWater = calcData.rice * 12 * 3400; // 3400L per kg rice
   const directWater = calcData.direct * 365;
 
@@ -1420,7 +1414,7 @@ function showResults() {
     { label: 'Denim clothing', val: calcData.denimWater, icon: '👖' },
     { label: 'Chocolate', val: calcData.chocoWater, icon: '🍫' },
     { label: 'Coffee/Tea', val: calcData.coffeeWater, icon: '☕' },
-    { label: 'Meat', val: calcData.meatWater, icon: '🥩' },
+    { label: 'Mutton/Chicken', val: calcData.meatWater, icon: '🍗' },
     { label: 'Rice', val: calcData.riceWater, icon: '🍚' },
     { label: 'Direct use', val: calcData.directWater, icon: '💧' },
   ].filter(x => x.val > 0).sort((a,b) => b.val - a.val);
@@ -1461,7 +1455,7 @@ function showResults() {
   }
   if (calcData.meat > 2) {
     const save = (calcData.meat - 2) * 52 * 500;
-    recos.push({ icon:'🥩', iconClass:'green', title:'Reduce meat consumption', desc:'Try limiting beef/mutton to 2 servings per week. Replace with plant-based proteins.', save });
+    recos.push({ icon:'🍗', iconClass:'green', title:'Reduce mutton / chicken', desc:'Try limiting to 2 servings per week. Replace with dal, paneer, or plant-based proteins.', save });
   }
   if (calcData.coffee > 7) {
     const save = (calcData.coffee - 7) * 52 * 140;
@@ -1554,12 +1548,12 @@ function showImpact() {
       source:'UNESCO-IHE — Cocoa: 24,000L/kg × avg 100g bar = 2,400L/kg'
     },
     {
-      icon:'🥩', label:'Meat consumption',
+      icon:'🍗', label:'Mutton/Chicken',
       formula: calcData.meat > 2
-        ? `${calcData.meat} servings/wk → 2/wk = ${calcData.meat-2} saved × 500L × 52 wks`
+        ? `${calcData.meat} servings/wk → 2/wk = ${calcData.meat-2} saved × 350L × 52 wks`
         : `${calcData.meat} servings/wk — within sustainable range (≤2)`,
       save: calcData.meat > 2 ? (calcData.meat-2)*52*500 : 0,
-      source:'FAO — Beef: 15,400L/kg, ~500L per avg serving'
+      source:'FAO — Chicken: 4,300L/kg; Mutton: 10,400L/kg; avg ~350L per serving'
     },
     {
       icon:'☕', label:'Coffee / Tea',
